@@ -2,7 +2,7 @@
 
 # MetaBlock!
 <p align="center">
-  <img src="MetaBlock!.png" width=300 align="center">
+  <img src="Tampilan-Awal.jpg" width=300 align="center">
 </p>
 
 By [Rahmad Gunawan dan Suhardiman Agung]
