@@ -9,7 +9,7 @@ By [Rahmad Gunawan dan Suhardiman Agung]
 ## Dashboard
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://deploy------------/)
 
-[![Dataset](https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png?w=100fit=fill&w=100&h=100)](https://www.kaggle.com/datasets/kaushiksuresh147/metaverse-cryptos-historical-data)
+[![Dataset](png-transparent-kaggle-predictive-modelling-data-science-business-predictive-analytics-__-blue-text-laboratory-thumbnail.png)](https://www.kaggle.com/datasets/kaushiksuresh147/metaverse-cryptos-historical-data)
 
 The dataset Metaverse Crypto Tokens Historical data, Top leading and buzzing metaverse tokens
 
