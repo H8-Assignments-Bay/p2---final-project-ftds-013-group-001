@@ -9,7 +9,7 @@
 <h1 align="center">Hi Mate👋, We are FTDS Batch 013 Group 1</h1>
 <h3 align="center">Meta Block </h3>
 
-By [Rahmad Gunawan](https://github.com/rahmad07g) and [Suhardiman](https://github.com/sumankwan)
+By [Rahmad Gunawan](https://www.linkedin.com/in/ragunnn/) and [Suhardiman](https://www.linkedin.com/in/suhardiman-agung-9589ab3a)
 ## Dashboard
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://metablock-final-project.herokuapp.com/)
 
@@ -82,8 +82,8 @@ Tujuan dari mengisi profile risk adalah untuk mengidentifikasi risk profile user
 
 
 ## Contributor
-1. [Rahmad Gunawan](https://github.com/rahmad07g)
-2. [Suhardiman](https://github.com/sumankwan)
+1. [Rahmad Gunawan, Github (Link)](https://github.com/rahmad07g)
+2. [Suhardiman, Github (Link](https://github.com/sumankwan)
 
 <p align="center">
   <img src="Created.jpg" width=700 align="center">
