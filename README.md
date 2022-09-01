@@ -9,7 +9,7 @@
 <h1 align="center">Hi Mate👋, We are FTDS Batch 013 Group 1</h1>
 <h3 align="center">Meta Block </h3>
 
-By [Rahmad Gunawan dan Suhardiman Agung]
+By [Rahmad Gunawan](https://github.com/rahmad07g) and [Suhardiman](https://github.com/sumankwan)
 ## Dashboard
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://metablock-final-project.herokuapp.com/)
 
