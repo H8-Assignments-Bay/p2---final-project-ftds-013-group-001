@@ -11,7 +11,7 @@
 
 By [Rahmad Gunawan dan Suhardiman Agung]
 ## Dashboard
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://deploy------------/)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://metablock-final-project.herokuapp.com/)
 
 [![Dataset](png-transparent-kaggle-predictive-modelling-data-science-business-predictive-analytics-__-blue-text-laboratory-thumbnail.png)](https://www.kaggle.com/datasets/kaushiksuresh147/metaverse-cryptos-historical-data)
 
