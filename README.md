@@ -6,7 +6,7 @@
 <p align="center">
   <img src="Meta-Head.jpg" width=800 align="center">
 </p>
-<h1 align="center">Hi 👋, Mate, We are FTDS Batch 013 Group 1</h1>
+<h1 align="center">Hi Mate👋, We are FTDS Batch 013 Group 1</h1>
 <h3 align="center">Meta Block </h3>
 
 By [Rahmad Gunawan dan Suhardiman Agung]
@@ -48,8 +48,9 @@ There are a high degree of frauds occurring in the metaverse. We help you select
 </p>
 
 ---
-
-Untuk menggunakan aplikasi cukup mudah, cukup ganti laman yang telah disediakan pada navigation menu untuk menuju menu 'Home', 'Profile Risk' dan 'Rekomendasi Aset Kripto' dimana anda akan diarahkan untuk mengisi profile risk user dan kemudian akan mengetahui bagaimana profile risk user tersebut, dan kemudian adalah Rekomendasi Aset Kripto Sesuai dengan profile risk user tersebut.
+Untuk menggunakan aplikasi cukup mudah, terdapat 3 navigation page yaotu 'Home', 'Profile Risk' dan 'Rekomendasi Aset Kripto’ Pada page Home , user dapat mengetahui harga token/coin crypto, hingga saat ini kami masih menggunakan API Binance, jadi bukan hanya token metaverse namun juga terdapat beberapa koin lainnya seperti BTC,ETH,dll 
+Kemudian pada Page Profile Risk user akan diarahkan untuk mengisi profile risk user, dimana terdapat beberapa pertanyaan yang harus diisi oleh user.
+Tujuan dari mengisi profile risk adalah untuk mengidentifikasi risk profile user, apakah tergolong dalam kategori rendah,med,tinggi, setelah mengetahui risk profile user tersebut, kita dapat mengetahui koin/token apa saja yang cocok/sesuai dengan risk profile user tersebut. Sehingga user akan lebih nyaman dalam bertransaksi dan kemudian akan mengetahui bagaimana profile risk user tersebut, dan terakhir adalah page Rekomendasi Aset Kripto, dimana user akan diberikan beberapa token yang sesuai dengan profile risk user tersebut.
 
 <p align="center">
   <img src="Profile-Risk.jpg" width=700 align="center">
