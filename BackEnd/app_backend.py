@@ -1,16 +1,16 @@
+from flask import Flask, request, jsonify
 import schedule
 import time
 import pandas as pd
 import requests
 import numpy as np
-import json
 from sklearn.preprocessing import MinMaxScaler
 from datetime import datetime, timedelta
-from flask import Flask, jsonify, request
 import pickle
 
 # initialize app
 app = Flask(__name__)
+
 
 # data is manually imported from (please check) notebook
 token = ['ALI Token', 'AdShares', 'Age Of Knights', 'Atlantis Metaverse', 'CEEK VR', 'Decentraland', 'Drive 2', 'Enjin Coin', 'Fistiana', 'GameCredits', 'KingdomX', 'KlayCity', 'MStation', 'Magic Metaverse', 'MangaMon', 'Meta Dance Token', 'MetaCars', 'Metaverse Miner', 'Monavale', 'Moon Rabbit', 'PlayDapp', 'Sinverse', 'Star Atlas DAO', 'UFO Gaming', 'Verasity', 'X Protocol']
@@ -38,6 +38,10 @@ def open_model(model_path):
 
 regressor = open_model("regressor_model.pkl")
 
+@app.route("/")  # Home
+def home():
+    return "Program is up and running"
+
 # define function to get real time price
 prices = {}
 updates = []
@@ -56,6 +60,7 @@ def get_data():
     return updates, prices
 
 sc = MinMaxScaler(feature_range=(0,1))
+@app.route("/predict")  # Home
 def predict_future():
     update_symbol, price_result = get_data()
     for i, value in enumerate(update_symbol):
@@ -92,16 +97,16 @@ def predict_future():
         return y_future[0][0]
 
 price_container = {}
-
+  
 # define scheduler
 def helper_predict():
     price_container = predict_future()
     return price_container
- 
+    
 schedule.every(10).days.do(helper_predict)
 
 while True:
     schedule.run_pending()
     time.sleep(1)
 
-app.run(debug=True)
+# app.run(debug=True)
