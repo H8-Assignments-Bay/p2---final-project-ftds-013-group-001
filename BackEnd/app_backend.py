@@ -36,7 +36,7 @@ def open_model(model_path):
         model = pickle.load(modelfile)
     return model
 
-regressor = open_model("regressor_model.pkl")
+# regressor = open_model("regressor_model.pkl")
 
 @app.route("/")  # Home
 def home():
@@ -89,7 +89,7 @@ def predict_future():
 
         for j in range(10):
             x_pred = np.append(x_pred[:, 1:, :], y_pred.reshape(1, 1, 1), axis=1)
-            y_pred = regressor.predict(x_pred)
+            # y_pred = regressor.predict(x_pred)
             y_future.append(y_pred.flatten()[0])
 
         y_future = np.array(y_future).reshape(-1, 1)
