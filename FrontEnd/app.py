@@ -29,7 +29,6 @@ from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 # except (ConnectionError, Timeout, TooManyRedirects) as e:
 #     print(e)
 
-
 pageicon = Image.open('Meta.png')
 home1=Image.open('home6.png')
 home2=Image.open('home7.png')
@@ -251,7 +250,7 @@ elif selected == 'Profile Risk':
     st.write(skor)
     if skor < 19:
         st.subheader('Profile Risk Pengguna')
-        st.write(f"Hai {text1} Anda Merupakan Pengguna Dengan profil risiko Rendah, stabil Biasanya para investor pemula yang baru tertarik untuk investasi termasuk ke dalam tipe konservatif") 
+        st.write(f"Hai {text1} Anda Merupakan Pengguna Dengan profil risiko Rendah/stabil, Biasanya para investor pemula yang baru tertarik untuk investasi termasuk ke dalam tipe konservatif") 
         col4, col5 = st.columns(2)
         with col4:
             col4.metric("----", "Rendah", "Anda disarankan pada token yang cenderung stabil, dan volatilitas yang rendah") # akan dibuat otomatis, hanya tester tampilan
@@ -266,10 +265,10 @@ elif selected == 'Profile Risk':
                 lottie_hello,height=400,width=400)
     elif 19<=skor<=30:
         st.subheader('Profile Risk Pengguna')
-        st.write(f"Hai {text1} Anda Merupakan Pengguna Dengan profil risiko Medium/Moderate, stabil Biasanya para investor pemula yang baru tertarik untuk investasi termasuk ke dalam tipe konservatif") 
+        st.write(f"Hai {text1} Anda Merupakan Pengguna Dengan profil risiko Medium/Moderate, Kamu memliki karakteristik yang siap menerima fluktuasi jangka pendek dengan potensi keuntungan yang diharapkan dapat lebih tinggi dari tingkat inflasi dan deposito") 
         col4, col5 = st.columns(2)
         with col4:
-            col4.metric("----", "Sedang", "Anda disarankan untuk memilih token yang ") # akan dibuat otomatis, hanya tester tampilan
+            col4.metric("----", "Sedang", "Anda disarankan untuk memilih token yang volatilitasnnya sedang") # akan dibuat otomatis, hanya tester tampilan
         with col5:
             def load_lottieurl(url: str):
                 r = requests.get(url)
@@ -281,7 +280,7 @@ elif selected == 'Profile Risk':
                 lottie_hello,height=400,width=400)
     else:
         st.subheader('Profile Risk Pengguna')
-        st.write(f"Hai {text1} Anda Merupakan Pengguna Dengan profil risiko Tinggi/Agresif,adalah investor yang sudah berpengalaman. Tipe investor agresif tidak takut investasi pokoknya berkurang atau hilang demi imbal hasil yang tinggi.Investor agresif sudah terbiasa terhadap fluktuasi harga pasar modal yang ekstrim. Reksadana saham, saham dan crypto merupakan beberapa pilihan yang cocok untuk investor agresif") 
+        st.write(f"Hai {text1} Anda Merupakan Pengguna Dengan profil risiko Tinggi/Agresif,Kamu adalah investor yang sudah berpengalaman. Tipe investor agresif tidak takut investasi pokoknya berkurang atau hilang demi imbal hasil yang tinggi.Investor agresif sudah terbiasa terhadap fluktuasi harga pasar cryptocurrency yang ekstrim. Token Metaverse merupakan salah satu pilihan yang cocok untuk Kamu") 
         col4, col5 = st.columns(2)
         with col4:
             col4.metric("----", "Tinggi", "Anda cocok terhadap token-token yang memiliki volatilitas tinggi untuk mendapatkan keuntungan yang maksimal") # akan dibuat otomatis, hanya tester tampilan
@@ -293,7 +292,9 @@ elif selected == 'Profile Risk':
                 return r.json()
             lottie_hello = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_okbkcby3.json")
             st_lottie(
-                lottie_hello,height=400,width=400)
+                lottie_hello,height=400,width=400)   
+        if st.form_submit_button('Submit'):
+            st.write('----')
 
     Low = '''Tipe investor yang memilih profil risiko investasi paling rendah atau bahkan tidak ada risiko sama sekali. 
              Investor konservatif menyukai jenis investasi yang nilainya stabil. Biasanya para investor pemula yang baru tertarik untuk investasi termasuk ke dalam tipe konservatif'''
@@ -307,14 +308,77 @@ elif selected == 'Profile Risk':
 else:
     page3 = Image.open('token.png')
     st.image(page3, use_column_width=True)
+        
+    # data is manually imported from (please check) notebook
+    token = ['ALI Token', 'AdShares', 'Age Of Knights', 'Atlantis Metaverse', 'CEEK VR', 'Decentraland', 'Drive 2', 'Enjin Coin', 'Fistiana', 'GameCredits', 'KingdomX', 'KlayCity', 'MStation', 'Magic Metaverse', 'MangaMon', 'Meta Dance Token', 'MetaCars', 'Metaverse Miner', 'Monavale', 'Moon Rabbit', 'PlayDapp', 'Sinverse', 'Star Atlas DAO', 'UFO Gaming', 'Verasity', 'X Protocol']
+    original_prices = [0.009009009525727724, 0.32861077253194404, 0.03320053149075533, 0.0029938289524685385, 0.279196300157807, 0.153997532226834, 0.0018040174615156427, 0.09526050235854708, 0.0011107735084844583, 0.019209789881132835, 0.6161988571754959, 0.06174926444372217, 0.003030115798964131, 0.16621370596038176, 0.011224015220876672, 0.07299748470105882, 0.04844021552926039, 0.016174810321490388, 0.010843669410543239, 0.017684890896706953, 0.015267177506943359, 0.0167087409858082, 0.0008265611199306522, 0.05804046686719992, 0.0036570863977862383, 0.005999331789919661]
+    future_prices = [1.3134313121554442e-05, 1.4056316614151, 9.59637836785987e-05, 0.020582780241966248, 0.2336307317018509, 0.6720395684242249, 0.012508251704275608, 0.4241279363632202, 0.2520744800567627, 0.016123205423355103, 0.09946747869253159, 0.07731432467699051, 0.006555549800395966, 0.001912317587994039, 0.007072742562741041, 0.025181720033288002, 0.0019404147751629353, 0.036209430545568466, 0.5105111002922058, 3.533509880071506e-05, 8.969238479039632e-06, 0.0007363884942606091, 0.038526568561792374, 0.0005155240651220083, 0.005114264320582151, 0.0032673049718141556]
+    growth = [-0.9985420913271269, 3.277497206146702, -0.9971095708601737, 5.875068872921038, -0.16320262277903252, 3.3639632317895174, 5.933553566475359, 3.452295818962434, 225.93598481718712, -0.16067767929149834, -0.8385789302686051, 0.25206875536880635, 1.163465106725305, -0.9884948261219213, -0.36985629264064623, -0.6550330448177382, -0.9599420697459361, 1.2386309221480896, 46.079183343217636, -0.998001961165206, -0.99941251495406, -0.9559279484381217, 45.61067116854556, -0.9911178511657813, 0.39845323962758816, -0.4553885188840491]
+    risk = ['low', 'low', 'low', 'low', 'low', 'low', 'low', 'low', 'high', 'low', 'low', 'low', 'low', 'low', 'low', 'low', 'low', 'low', 'low', 'low', 'low', 'low', 'medium', 'low', 'low', 'low']
+    recommendation = ['sell', 'buy', 'sell', 'buy', 'sell', 'buy', 'buy', 'buy', 'buy', 'sell', 'sell', 'buy', 'buy', 'sell', 'sell', 'sell', 'sell', 'buy', 'buy', 'sell', 'sell', 'sell', 'buy', 'sell', 'buy', 'sell']
+    symbols = ['ALI', 'ADS', 'GEM', 'TAU', 'CEEK', 'MANA', 'DMT', 'ENJ', 'FCT', 'GAME', 'KT', 'ORB', 'MST', 'MAC', 'MAN', 'MDT', 'MTC', 'META', 'MONA', 'AAA', 'PLA', 'SIN', 'POLIS', 'UFO', 'VRA', 'POT']
+
+    result = pd.DataFrame()
+    result['token'] = token
+    result['original_prices'] = original_prices
+    result['future_prices'] = future_prices
+    result['growth'] = growth
+    result['risk'] = risk
+    result['recommendation'] = recommendation
+    result['symbols'] = symbols
+    low = result[(result['risk']=='low')]
     # st.header('>>Kami berikan rekomendasi token kripto sesuai profile risk anda')
     st.subheader('Rekomendasi Aset Kripto')
     # st.write('----')
-    with open('style.css') as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-    col6, col7, col8 = st.columns(3)
-    col6.metric("Low Risk", "Axie", "8%") # akan dibuat otomatis, hanya tester tampilan
-    col7.metric("Low Risk", "Sand Box", "4%") #
-    col8.metric("Low Risk", "Ape Coin", "15.5%") #
+    riskprof = st.selectbox("Risk Profile", ['Low/Rendah', 'Med/Moderate', 'High/Tinggi'])
+    # with open('style.css') as f:
+    #     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    if riskprof == 'Low/Rendah':
+        col1, col2 = st.columns(2)
+        with col1:
+            def load_lottieurl(url: str):
+                r = requests.get(url)
+                if r.status_code != 200:
+                    return None
+                return r.json()
+            lottie_hello = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_h8dezgfa.json")
+            st_lottie(
+                lottie_hello,height=400,width=400)
+        with col2:
+            low = result[(result['risk']=='low')]
+            st.header('**List Token Low Risk**')
+            st.dataframe(low)
+        st.subheader('5 Best Token To Buy (Growth)')
+        col1, col2, col3, col4, col5= st.columns(5)
+        col1.metric("Buy", "Monavale", "46.07 %") # akan dibuat otomatis, hanya tester tampilan
+        col2.metric("Buy", "Drive 2", "5.93%") #
+        col3.metric("Buy", "Atlantis", "5.87%") #
+        col4.metric("Buy", "Enjin", "3.45%") #
+        col5.metric("Buy", "Decentraland", "3.36%") #
+        st.subheader('Top 5 Token Recommend to Short/Sell')
+        col1, col2, col3, col4, col5= st.columns(5)
+        col1.metric("Buy", "PlayDapp", "-0.999%") # akan dibuat otomatis, hanya tester tampilan
+        col2.metric("Buy", "ALI Token", "-0.998%") #
+        col3.metric("Buy", "Moon Rabbit", "-0.998%") #
+        col4.metric("Buy", "Age Of Knights", "-0.997%") #
+        col5.metric("Buy", "UFO Gaming", "-0.991%") #
+    elif riskprof == 'Med/Moderate':
+        st.subheader('Recommend to Buy')
+        col1, col2 = st.columns(2)
+        with col1:
+            col1.metric("Buy", "Star Atlas DAO", "45.61%")
+        with col2:
+            st.subheader('Star Atlas DAO')
+            st.write('A grand strategy game of space exploration, territorial conquest, political domination, and living among the stars')
+            st.write("for more details check out [link](https://staratlas.com/)")
+    else:      
+        st.subheader('Recommend to Buy')
+        col1, col2 = st.columns(2)
+        with col1:
+            col1.metric("Buy", "Fistiana", "225.93%")
+        with col2:
+            st.subheader('Fistiana')
+            st.write('FISTIANA embeds Game-Fi and Social-Fi with unlimited regions and time, allowing players to earn generous token rewards while enjoying sports entertainment')
+            st.write("for more details check out [link](https://fistiana.org/)")
+    
 st.write('----')
-
