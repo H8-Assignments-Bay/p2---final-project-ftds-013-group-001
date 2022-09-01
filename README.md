@@ -81,3 +81,13 @@ Untuk menggunakan aplikasi cukup mudah, cukup ganti laman yang telah disediakan 
 ## Contributor
 1. [Rahmad Gunawan](https://github.com/rahmad07g)
 2. [Suhardiman](https://github.com/sumankwan)
+
+<p align="center">
+  <img src="Created" width=700 align="center">
+  
+</p>
+
+<p align="center">
+  <img src="Thanks.jpg" width=700 align="center">
+  
+</p>
