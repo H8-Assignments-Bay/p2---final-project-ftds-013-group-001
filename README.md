@@ -83,7 +83,7 @@ Untuk menggunakan aplikasi cukup mudah, cukup ganti laman yang telah disediakan 
 2. [Suhardiman](https://github.com/sumankwan)
 
 <p align="center">
-  <img src="Created" width=700 align="center">
+  <img src="Created.jpg" width=700 align="center">
   
 </p>
 
